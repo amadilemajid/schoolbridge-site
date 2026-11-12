@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SchoolBridge: fee receipts and school notices for parents in Uganda</title>
+<meta name="description" content="SchoolBridge helps schools in Uganda send fee receipts, balance reminders and attendance alerts to parents who have agreed to receive them. In development.">
+<!--
+  BEFORE YOU PUBLISH, replace these two placeholders (search for them):
+  YOUR_FULL_NAME   and   YOUR_EMAIL
+  Do not add phone numbers, student names or fee data to this page.
+-->
+<style>
+  :root {
+    --paper: #fbfcff;
+    --line: #d4e0f3;
+    --ink: #1a2745;
+    --muted: #4a5878;
+    --margin: #c8453b;
+    --note: #f1f5fd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141b2e;
+      --line: #25304c;
+      --ink: #e8edf8;
+      --muted: #a9b4cf;
+      --margin: #ef7d72;
+      --note: #1b2540;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+    background-color: var(--paper);
+    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--line) 31px, var(--line) 32px);
+    color: var(--ink);
+    font: 18px/32px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 64px 24px 64px 56px;
+    border-left: 2px solid var(--margin);
+    margin-left: max(24px, calc((100vw - 44rem) / 2));
+  }
+  h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; line-height: 1.2; }
+  h1 { font-size: 2.4rem; margin: 0 0 32px; }
+  h2 { font-size: 1.45rem; margin: 64px 0 0; line-height: 32px; }
+  p, ul { margin: 0 0 32px; }
+  ul { padding-left: 1.2em; }
+  .status { color: var(--muted); }
+  blockquote {
+    margin: 0 0 32px;
+    padding: 0 16px;
+    background: var(--note);
+    border-left: 4px solid var(--margin);
+  }
+  a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--margin); outline-offset: 3px; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 64px; }
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    main { padding-left: 20px; margin-left: 16px; padding-right: 16px; }
+    h1 { font-size: 1.9rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Fee receipts and school notices, sent to parents when they happen.</h1>
+
+  <p>SchoolBridge is a tool for schools in Uganda. It records school fee payments, works out each child’s balance, and sends parents and guardians short messages about it, so the bursar does not have to phone each family.</p>
+
+  <p class="status">Status: in development. We are preparing a pilot with a small number of schools. No school is using SchoolBridge yet.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Sends a receipt to the parent after a school fee payment.</li>
+    <li>Reminds parents of fee balances before and after the deadline.</li>
+    <li>Tells a parent on the same day if their child is marked absent.</li>
+    <li>Lets a parent ask for a balance or the latest receipt by replying to the school’s WhatsApp number.</li>
+    <li>If a WhatsApp message cannot be delivered, sends the same notice by SMS.</li>
+  </ul>
+
+  <h2>Sample messages</h2>
+  <p>These are examples. The names are made up.</p>
+
+  <blockquote>
+    <p>SchoolBridge: Payment of UGX 100,000 received for Amina (P.5). Balance UGX 50,000. Thank you.</p>
+  </blockquote>
+  <blockquote>
+    <p>SchoolBridge: Dear parent, UGX 150,000 is outstanding for Amina (P.5) for Term 2. Deadline 15 Dec. Pay by Mobile Money.</p>
+  </blockquote>
+  <blockquote>
+    <p>SchoolBridge: Amina (P.5) was marked absent today. Please contact the school if this is unexpected.</p>
+  </blockquote>
+
+  <h2>Who receives messages</h2>
+  <p>Only parents and guardians whom the school has registered, and who have agreed to receive school notices. Messages are transactional: receipts, balances, attendance and report notices. We do not send marketing or promotional messages. Messages are sent between 8:00 AM and 8:00 PM East Africa Time on school days, except urgent notices from the school.</p>
+  <p>A parent can stop messages at any time by replying STOP.</p>
+
+  <h2>Contact</h2>
+  <p>SchoolBridge is being built by AMADILE  MAJID in Uganda.<br>
+  Email: <a href="mailto:YOUR_EMAIL">amadilemajid10@gmail.com</a></p>
+
+  <footer>© 2026 SchoolBridge. This page describes a product in development.</footer>
+</main>
+</body>
+</html>
